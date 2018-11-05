@@ -34,7 +34,13 @@ public class ActMain extends AppCompatActivity {
             startActivity(intent);
         }
     };
-
+    private View.OnClickListener btnInvoice_click=new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(ActMain.this,A6.class);
+            startActivity(intent);
+        }
+    };
 
 
     @Override
@@ -57,11 +63,13 @@ public class ActMain extends AppCompatActivity {
         btnPower.setOnClickListener(btnPower_click);
         btnDwinner=findViewById(R.id.btnDwinner);
         btnDwinner.setOnClickListener(btnDwinner_click);
-
+        btnInvoice=findViewById(R.id.btnInvoice);
+        btnInvoice.setOnClickListener(btnInvoice_click);
 
     }
     TextView lblText;
     Button btnLotto;
     Button btnPower;
     Button btnDwinner;
+    Button btnInvoice;
 }

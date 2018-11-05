@@ -2,36 +2,66 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/wallpapers">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="I wanna be winner!"
         android:id="@+id/lblText"
         android:layout_weight="1"
-        />
+        android:textSize="40sp"/>
 
-    <Button
-    android:id="@+id/btnLotto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="大樂透"
-    android:layout_weight="1"
-    />
-    <Button
-        android:id="@+id/btnPower"
+</LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="威力彩"
-        android:layout_weight="1"
-        />
-    <Button
-        android:id="@+id/btnDwinner"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnLotto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大樂透"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btnPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="威力彩"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btnDwinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雙贏彩"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="雙贏彩"
-        android:layout_weight="1"
-        />
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="統一發票"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
 
 </LinearLayout>

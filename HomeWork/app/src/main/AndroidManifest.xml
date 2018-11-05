@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".A2" />
         <activity android:name=".A3" />
-        <activity android:name=".A4"></activity>
+        <activity android:name=".A4" />
+        <activity android:name=".A6"></activity>
     </application>
 
 </manifest>

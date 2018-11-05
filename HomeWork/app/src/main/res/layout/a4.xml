@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".A4"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/a4">
 
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="26sp"
          />
     <Button
         android:id="@+id/btnBack3"
