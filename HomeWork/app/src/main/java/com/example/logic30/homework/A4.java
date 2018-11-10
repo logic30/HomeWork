@@ -10,18 +10,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class A4 extends Activity {
-
-
     private View.OnClickListener btnBack1_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             finish();
         }
     };
-
     public class DwinnerGen {
-
-
         public String GetDwinner() {
 
             ArrayList<Integer> list = new ArrayList<Integer>();
@@ -60,7 +55,6 @@ public class A4 extends Activity {
         InitialComponent();
     }
     private void InitialComponent() {
-
         btnBack3 = findViewById(R.id.btnBack3);
         btnBack3.setOnClickListener(btnBack1_click);
     }

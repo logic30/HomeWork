@@ -9,23 +9,15 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
-
 public class A2 extends Activity {
-
-
     public class CLottoGen {
-
-
         public String GetLottos() {
-
             ArrayList<Integer> list = new ArrayList<Integer>();
             for (int i = 1; i < 50; i++) {
                 list.add(i);
             }
             int[] nums = new int[6];
             for (int i = 0; i < 6; i++) {
-
                 int index = (int) (Math.random() * list.size());
                 nums[i] = list.get(index);
                 list.remove(index);
@@ -46,7 +38,6 @@ public class A2 extends Activity {
             return s;
         }
     }
-
     private View.OnClickListener btnBack1_click=new View.OnClickListener(){
         @Override
         public void onClick(View v) {
@@ -54,7 +45,6 @@ public class A2 extends Activity {
             finish();
         }
     };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,9 +53,6 @@ public class A2 extends Activity {
         lblLotto1.setText((new CLottoGen()).GetLottos());
         InitialComponent();
     }
-
-
-
     private void InitialComponent() {
 
         btnBack1 = findViewById(R.id.btnBack1);

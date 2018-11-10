@@ -1,14 +1,12 @@
 package com.example.logic30.homework;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
 public class A3 extends Activity {
     private View.OnClickListener btnBack2_click =new View.OnClickListener() {
         @Override
@@ -16,12 +14,7 @@ public class A3 extends Activity {
             finish();
         }
     };
-
-
-
     public class PowerGen {
-
-
         public String GetPower() {
 
             ArrayList<Integer> list = new ArrayList<Integer>();
@@ -52,8 +45,6 @@ public class A3 extends Activity {
         }
     }
     public class PowerGen2 {
-
-
         public String GetPower2() {
             int i = 0;
 
@@ -63,11 +54,6 @@ public class A3 extends Activity {
             return s;
         }
     }
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +66,6 @@ public class A3 extends Activity {
         InitialComponent();
     }
     private void InitialComponent() {
-
         btnBack2 = findViewById(R.id.btnBack2);
         btnBack2.setOnClickListener(btnBack2_click);
     }

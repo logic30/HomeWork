@@ -48,13 +48,7 @@ public class ActMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.actmain);
         InitialComponent();
-
-
     }
-
-
-
-
     private void InitialComponent() {
         lblText=findViewById(R.id.lblText);
         btnLotto=findViewById(R.id.btnLotto);
